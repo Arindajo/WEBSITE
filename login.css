@@ -1,0 +1,16 @@
+.box{
+    background-color: blue;
+    padding: auto;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    position: center
+    
+}
+p{
+    color: azure;
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;text-align: right;
+
+}
