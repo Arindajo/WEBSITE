@@ -7,7 +7,97 @@ p{
 }
 .box{
     color: blueviolet;
-    background-color: black;
-    width:400px ;
-    height:400pxs ;
+    background-color:rgb(250, 250, 245);
+    word-spacing: 20px;
+    font-size: larger;
+    font-weight: bolder;
+    margin-right: 30px;
+    gap: 30px;
+   text-align: center;
+}
+.image-container1{
+    position: relative;
+    display:inline-block;
+   
+}
+.image-container1 img{
+    border-radius: 10px;
+}
+.text-overlay{
+    position: absolute;
+    top: -3%;
+    right: 50%;
+    transform: (-50%, -50%);
+  margin: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.button-container{
+position: absolute;
+top: 60%;
+left: 10%;
+transform: translate(-50%, -50%);
+
+}    
+button{
+    font-size: 24px;
+    border: 20px;
+    color:blue;
+    border: 30px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-family:cursive;
+    border-radius: 10px;
+    background-color:rgb(247, 250, 247);
+    
+}   
+ button2{
+    color: aliceblue;
+    font-size: 14px;
+    border-radius: 10px;
+    
+ }   
+.button-container2{
+    position: absolute;
+    bottom: -46%;
+    right: 60%;
+    
+
+}
+.snowy{
+   
+    text-align: center;
+}
+.image-row1{
+    /* display: flex;
+    flex-wrap : nowrap;
+    margin: auto;
+    justify-content:flex-start; */
+    display:inline-flex;
+    
+    gap: 30px;
+    justify-content: space-between;
+    
+}
+/* .image-container{
+   
+    flex: 1;
+    text-align: center;
+    margin: 0 5px;} */
+
+.image-container p{
+    font-size: 15px;
+    color: blueviolet;
+    text-align: center;
+    margin-top: 0;
+    margin: 0px;
+    font-weight: bolder;
+    
+}
+.par{
+    font-size: 15px;
+    color: blueviolet;
+    text-align: center;
+  font-weight: bolder;
+    font-weight: bolder; 
 }
