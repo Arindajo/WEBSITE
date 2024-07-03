@@ -59,10 +59,23 @@ button{
  }   
 .button-container2{
     position: absolute;
-    bottom: -46%;
-    right: 60%;
+    border:none;
+    color: white;
+    padding: 10px;
+    color: rgb(4, 115, 243);
+    background-color: rgb(32, 197, 247);
+    font-size: 20px;
+    position: absolute;
+    margin-left: 340px;
+    margin-top: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+    
     
 
+}
+.button-container2:hover.button-container2{
+    background-color: chartreuse;
 }
 .snowy{
    
@@ -77,6 +90,7 @@ button{
     
     gap: 30px;
     justify-content: space-between;
+    
     
 }
 /* .image-container{
@@ -100,4 +114,12 @@ button{
     text-align: center;
   font-weight: bolder;
     font-weight: bolder; 
+}
+.choose{
+    
+  text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 6px;
+    text-align: left;
+    
 }
