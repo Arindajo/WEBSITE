@@ -1,125 +1,51 @@
-p{
-    color: aqua;
-    font-size: large;
-    font-family: cursive;
-    position: absolute;
+/* Styles for the body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
+/* Flex container for the image row */
+.image-row1 {
+    display: flex; /* Use flexbox for horizontal alignment */
+    padding: 5px; /* Optional: add some padding */
 }
-.box{
-    color: blueviolet;
-    background-color:rgb(250, 250, 245);
-    word-spacing: 20px;
-    font-size: larger;
-    font-weight: bolder;
-    margin-right: 30px;
-    gap: 30px;
-   text-align: center;
-}
-.image-container1{
-    position: relative;
-    display:inline-block;
-   
-}
-.image-container1 img{
-    border-radius: 10px;
-}
-.text-overlay{
-    position: absolute;
-    top: -3%;
-    right: 50%;
-    transform: (-50%, -50%);
-  margin: 10px;
-    font-size: 20px;
-    font-weight: bolder;
-}
-.button-container{
-position: absolute;
-top: 60%;
-left: 10%;
-transform: translate(-50%, -50%);
 
-}    
-button{
-    font-size: 24px;
-    border: 20px;
-    color:blue;
-    border: 30px;
-    cursor: pointer;
-    font-weight: bolder;
-    font-family:cursive;
-    border-radius: 10px;
-    background-color:rgb(247, 250, 247);
-    
-}   
- button2{
-    color: aliceblue;
-    font-size: 14px;
-    border-radius: 10px;
-    
- }   
-.button-container2{
-    position: absolute;
-    border:none;
-    color: white;
-    padding: 10px;
-    color: rgb(4, 115, 243);
-    background-color: rgb(32, 197, 247);
-    font-size: 20px;
-    position: absolute;
-    margin-left: 340px;
-    margin-top: 50px;
-    border-radius: 15px;
-    cursor: pointer;
-    
-    
+/* Individual image container */
+.image-container {
+    position: relative; /* Positioning context for absolute elements */
+    width: 200px;
+    height: 200px;
+    overflow: hidden; /* Prevent overflow of child elements */
+    margin-right: 5px; /* Add space between images */
+}
 
+/* Remove margin from the last image */
+.image-container:last-child {
+    margin-right: 0; /* Remove margin from the last container */
 }
-.button-container2:hover.button-container2{
-    background-color: chartreuse;
-}
-.snowy{
-   
-    text-align: center;
-}
-.image-row1{
-    /* display: flex;
-    flex-wrap : nowrap;
-    margin: auto;
-    justify-content:flex-start; */
-    display:inline-flex;
-    
-    gap: 30px;
-    justify-content: space-between;
-    
-    
-}
-/* .image-container{
-   
-    flex: 1;
-    text-align: center;
-    margin: 0 5px;} */
 
-.image-container p{
-    font-size: 15px;
-    color: blueviolet;
-    text-align: center;
-    margin-top: 0;
-    margin: 0px;
-    font-weight: bolder;
-    
+/* Image styling */
+.image-container img {
+    width: 100%; /* Make the image cover the container */
+    height: 100%; /* Ensure full height */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    position: absolute; /* Position the image absolutely */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Place the image behind the text */
 }
-.par{
-    font-size: 15px;
-    color: blueviolet;
-    text-align: center;
-  font-weight: bolder;
-    font-weight: bolder; 
-}
-.choose{
-    
-  text-decoration-line: underline;
-    text-decoration-style: dotted;
-    text-decoration-thickness: 6px;
-    text-align: left;
-    
+
+/* Text description styling */
+.descrip {
+    position: absolute; /* Position text absolutely */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    color: white; /* Text color */
+    z-index: 2; /* Place text above the image */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for better visibility */
 }

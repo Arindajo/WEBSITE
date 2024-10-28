@@ -3,53 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up</title>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./sign.css">
 </head>
-<link rel="stylesheet" href="./sign.css"
+<body class="bg-light">
+    <div class="container mt-5">
+        <header class="text-center mb-4">
+            <h2>
+                <a href="welcome.html" class="btn btn-link">WELCOME</a>
+                <a href="login.html" class="btn btn-link">LOG IN</a>
+                <a href="home.html" class="btn btn-link">HOME</a>
+            </h2>
+        </header>
+        
+        <div class="bot text-center">
+            <h1 class="mb-3">Welcome! Please Sign Up</h1>
+            <h2>An all-round experience<br>Your one-stop tour experience<br>>> Just for you and your favs</h2>
+        </div>
 
-<body>
-<pre>
-    <h2>
-                <a href="welcome.html">WELCOME</a>     <a href="login.html">LOG IN</a>       <a href="home.html">HOME</a>
-    </h2>
-    </pre>
-     <div class="bot">
-        <pre>
-    <h1>welcome!    please sign up</h1>
-    
-            <h2 >An all round experience  
-                         Your one stop tour experience    
-                                            >> >>  just for you and your favs</h2>
-        
-        </pre>
-   
-    <form>
-        <pre>
-            <h2>
-        Username:               <input type="username"><br></br>
-        Password:               <input type="password"><br></br>
-        Confirm Password:       <input style type="confirm password"placeholder="enter password again"><br></br>
-        Contact:                <input type="number"><br></br>
-        Email:                  <input type="email"><br></br>
-        Gender:                 <select name="gender"><br>
-                                <option value="M">male</option><br>
-                                <option value="F">female</option><br>
-                                </select>
-       </h2>
-       
-                         <input type="button" value="SIGN UP"> </button>
-    
-    </pre>
-        
-        
-        
-        <pre>
-            <h2>
-               Don't look back 
-              The best tour travels, bed and breakfast experience!!
-        </h2>
-            </pre>
-    </form>
+        <form class="mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Enter password again">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="contact">Contact:</label>
+                        <input type="tel" class="form-control" id="contact" placeholder="Enter your contact number">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <select class="form-control" id="gender">
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-2">
+                <button type="submit" class="btn btn-success">SIGN UP</button>
+            </div>
+            
+        </form>
+
+        <div class="text-center mt-4">
+            <h2>Don't look back<br>The best tour travels, bed and breakfast experience!!</h2>
+        </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
